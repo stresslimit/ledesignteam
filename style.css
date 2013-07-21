@@ -3,11 +3,14 @@
 
 body { font-family:'Courier New', courier, monospace; font-size:22px; line-height:1.5; letter-spacing:0.2em; color:#333; background:#fff; margin:0; padding:0; line-height:1.5; }
 
-h1, h2, h3, h4, h5, h6, p, ul { margin:0 auto; width:960px; padding-left:210px; box-sizing:border-box; -moz-box-sizing:border-box; }
-ul ul { padding-left:2em; }
-h1, h2, h3 { padding-left:250px; }
-section, blockquote, footer { margin:0 0 5px 0; padding:30px 0; }
-blockquote { margin-top:30px; border-top:10px solid #e8d200; font-weight:bold; }
+h1, h2, h3, h4, h5, h6, p, ul, ol { margin:0 auto; width:960px; padding-left:210px; box-sizing:border-box; -moz-box-sizing:border-box; }
+section > p:last-child, section > ul:last-child, section > ol:last-child, blockquote p:last-child { margin-bottom:0; }
+ul ul, ol ol { padding-left:1em; margin-bottom:1em; }
+li p { padding-left:0; }
+h1, h2 { padding-left:250px; }
+h3 { padding-left:210px; }
+section, blockquote, footer { margin:0 0 5px 0; padding:1.5em 0; }
+blockquote { margin-top:1em; margin-bottom:30px; border-top:10px solid #e8d200; border-bottom:10px solid #e8d200; font-weight:bold; }
 
 h1 { font-size:225%; }
 h2 { font-size:160%; }
@@ -59,7 +62,8 @@ footer p { font-size:120%; }
 @media only screen and (max-width:960px) {
   body { font-size:16px; }
   section.header { padding-bottom:1em; }
-  h1, h2, h3, h4, h5, h6, p, ul { width:auto !important; padding-left:10px !important; }
+  h1, h2, h3, h4, h5, h6, p, ul { width:auto !important; padding:0 10px !important; }
+  .beige p { padding:0 2em !important; }
   .logo { position:relative; float:left; }
   .page-menu li { padding-left:20px; }
 }
