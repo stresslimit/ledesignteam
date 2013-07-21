@@ -9,9 +9,10 @@
 </head>
 <body>
 
+
   <section class="grey header">
-    <ul class="page-menu">
-      <a class="site-title ir" href="/">{{site.title}}</a>
+    <ul class="page-menu clearfix">
+      <a class="logo ir" href="/">{{site.title}}</a>
       {% for page in site.pages %}
       <li{% if page.url == url %} class="current-menu-item"{% endif %}><a href="{{page.url}}">{{page.title}}.</a></li>
       {% endfor %}
@@ -19,14 +20,23 @@
   </section>
 
 
+  <section class="red">
+    {{body}}
+  </section>
 
-  {{body}}
+
+  {% for post in posts %}
+  <section class="{{post.meta.color}}">
+    {{post.body}}
+  </section>
+  {% endfor %}
 
 
   <footer class="grey">
     <h1>Take Care,</h1>
     <p><a href="us@ledesignteam.com">us@ledesignteam.com</a></p>
   </footer>
+
 
 </body>
 </html>
