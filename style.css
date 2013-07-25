@@ -3,12 +3,10 @@
 
 body { font-family:'Courier New', courier, monospace; font-size:22px; line-height:1.5; letter-spacing:0.2em; color:#333; background:#fff; margin:0; padding:0; line-height:1.5; }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol { margin:0 auto; width:960px; padding-left:210px; box-sizing:border-box; -moz-box-sizing:border-box; }
+h1, h2, h3, h4, h5, h6, p, ul, ol { margin:0 auto; width:860px; padding-left:210px; box-sizing:border-box; -moz-box-sizing:border-box; }
 section > p:last-child, section > ul:last-child, section > ol:last-child, blockquote p:last-child { margin-bottom:0; }
 ul ul, ol ol { padding-left:1em; margin-bottom:1em; }
 li p { padding-left:0; }
-h1, h2 { padding-left:250px; }
-h3 { padding-left:210px; }
 section, blockquote, footer { margin:0 0 5px 0; padding:1.5em 0; }
 blockquote { margin-top:1em; margin-bottom:30px; border-top:10px solid #e8d200; border-bottom:10px solid #e8d200; font-weight:bold; }
 
@@ -22,21 +20,35 @@ a { color:#0091e5; text-decoration:none; }
 img, video, object{ max-width:100% }
 article, header, nav, section { display:block; }
 
-/* Colours */
+/* Section Classes */
 
-.red { color:#ebedd6; background:#d94d52; }
-.beige { background:#ebedd6; }
-  .beige p { padding-left:250px; padding-right:40px; }
-.green { background:#c5e4dc; }
-.brown { color:#ebedd6; background:#423934; }
-.grey { background:#e9e9e9; }
+  /* Colours */
+
+  .red { color:#ebedd6; background:#d94d52; }
+  .beige { background:#ebedd6; }
+  .green { background:#c5e4dc; }
+  .brown { color:#ebedd6; background:#423934; }
+  .grey { background:#e9e9e9; }
+
+  /* Floaty block list */
+
+  .block-list { text-align:justify; }
+  .block-list ul { padding-left:0; }
+  .block-list li { list-style:none; display:inline-block; width:31%; vertical-align:top; padding-bottom:1em; }
+  .block-list li p { width:auto; text-align:left; }
+  .block-list strong { display:block; margin-bottom:1em; }
+  
+  /* Fix blockquote padding */
+  
+  .blockquote { padding:0; }
+  .blockquote blockquote { margin:0; }
 
 /* Header & Footer */
 
 section.header { padding:0; }
 .logo { font-size:80%; display:block; background-image:url('/assets/logo.png'); background-size:100%; width:195px; height:153px; position:absolute; left:0; }
-.page-menu { text-transform:lowercase; position:relative; padding-left:250px; }
-  .page-menu li { display:inline-block; margin:0; padding:0.5em 0; list-style:none; }
+.page-menu { text-transform:lowercase; position:relative; padding-top:0.5em; }
+  .page-menu li { display:inline-block; margin:0; padding-bottom:0.5em; list-style:none; }
     .page-menu li a { color:#333; }
 li.current-menu-item a { color:#999; pointer-events:none; }
 
@@ -66,8 +78,11 @@ footer p { font-size:120%; }
   .beige p { padding:0 2em !important; }
   .logo { position:relative; float:left; }
   .page-menu li { padding-left:20px; }
+  .block-list li { width:46%; }
 }
-
+@media only screen and (max-width:360px) {
+  .logo { float:none; }
+}
 
 /* I got 99 problems, but this last line ain't one */
 
