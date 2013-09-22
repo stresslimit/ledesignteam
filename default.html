@@ -15,29 +15,12 @@
   <header>
     <a class="logo ir" href="/">{{site.title}}</a>
     <p class="site-description">{{site.meta['description']}}</p>
-
-{% comment %}
-    <ul class="page-menu clearfix">
-      {% for page in site.pages %}
-      <li{% if page.url == url %} class="current-menu-item"{% endif %}><a href="{{page.url}}">{{page.title}}.</a></li>
-      {% endfor %}
-    </ul>
-{% endcomment %}
   </header>
 </section>
 
 <section>
   {{body}}
 </section>
-
-
-{% comment %}
-{% for post in posts %}
-<section class="{{post.meta.class}}">
-  {{post.body}}
-</section>
-{% endfor %}
-{% endcomment %}
 
 
 <section>
