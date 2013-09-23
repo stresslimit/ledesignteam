@@ -8,17 +8,14 @@ section, blockquote, footer { padding:1.5em 0; }
 
 /* Typography */
 
-body { font-family:'Open Sans', sans-serif; font-size:18px; line-height:1.5; color:#333; background:#fff; margin:0; padding:1em 0 10em 0; line-height:1.5; }
-
-/*h1, h2, h3, h4, h5, h6, p, ul, ol { margin:0 auto; width:860px; padding-left:210px; box-sizing:border-box; -moz-box-sizing:border-box; }*/
-/*section > p:last-child, section > ul:last-child, section > ol:last-child, blockquote p:last-child { margin-bottom:0; }*/
+body { font-family:'Garamond', serif; font-size:24px; line-height:1.5; color:#333; background:#fff; margin:0; padding:1em 0 0 0; line-height:1.5; }
 ul ul, ol ol { padding-left:1em; margin-bottom:1em; }
 li p { padding-left:0; }
-blockquote { margin-top:1em; margin-bottom:30px; border-top:10px solid #e8d200; border-bottom:10px solid #e8d200; font-weight:bold; }
+blockquote { margin-top:1em; margin-bottom:30px; border-top:10px solid #e8d200; border-bottom:10px solid #e8d200; }
 
-h1 { font-size:140%; font-weight:400; text-align:center; margin:1em 0 2em 0; }
-h2 { font-size:90%; font-weight:600; margin-top:2em; }
-h2::after { content:" "; display:block; width:24px; height:0px; border-bottom:6px solid #000; margin:1em 0; }
+h1 { font-size:140%; font-weight:normal; text-align:center; margin:1em 0 2em 0; }
+h2 { font-size:90%; font-weight:normal; margin-top:2em; }
+h2::after { content:" "; display:block; width:24px; height:0px; border-bottom:5px solid #000; margin:1em 0; }
 
 p { margin-top:0; margin-bottom:1em; }
 a { color:#333; }
@@ -27,18 +24,15 @@ img, video, object{ max-width:100% }
 article, header, nav, section { display:block; }
 
 
-/* Section styles */
-
-
-
 /* Header & Footer */
 
 header {  }
-.logo { font-size:80%; display:block; background-image:url('/assets/logo.png'); background-size:415px 110px; width:415px; height:110px; float:left; }
-.site-description { width:250px; font-size:13px; line-height:1.8; float:right; }
+.logo { font-size:80%; display:block; background-image:url('/assets/logo.png'); background-size:100%; width:170px; height:110px; float:left; }
+.site-description { width:330px; font-size:0.75em; float:right; }
 
+section.footer { padding-bottom:0; }
 footer { width:70%; margin:auto; background:black; color:white; }
-footer p { margin:0 23%; }
+footer p { margin:0 20%; }
 footer a { color:#eee; }
 
 
@@ -62,7 +56,3 @@ footer a { color:#eee; }
 @media only screen and (max-width:360px) {
   .logo { float:none; }
 }
-
-/* I got 99 problems, but this last line ain't one */
-
-
