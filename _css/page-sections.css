@@ -1,0 +1,41 @@
+
+.header-logo {
+  /*word-spacing: 40em; */
+  line-height: 1.1;
+  max-width: 4em;
+}
+.header-site-description {
+}
+.header-social {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.splotch--yellow {
+  background: url('/assets/spotch-yellow.png') 0 0 no-repeat;
+}
+.splotch--purple {
+  background: url('/assets/spotch-purple.png') 0 0 no-repeat;
+}
+.splotch--rust {
+  background: url('/assets/spotch-rust.png') 0 0 no-repeat;
+}
+.splotch--contact {
+  background-size: auto;
+}
+.splotch {
+  padding: 1.2em;
+  background-size: contain;
+}
+
+.content-right {
+  float: right;
+}
+
+.footer {
+  background: var(--yellow);
+
+  a {
+    background: none;
+  }
+}

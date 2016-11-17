@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,300i');
+
+/*
+  Basics
+*/
+body {
+	background-color: white;
+  color: var(--almostblack);
+	line-height: 1.8;
+}
+body, input, button, textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+p {
+	margin: 0 0 1.5em 0;
+}
+a {
+	text-decoration: none;
+	background: var(--pink);
+	padding: 0.1em 0.25em;
+	color: var(--almostblack);
+
+	/*&:hover {
+		text-decoration: underline;
+	}*/
+}
+b, strong {
+  font-weight: 700;
+}
+i, em {
+	font-style: italic;
+}
+
+
+/*
+  Titles
+*/
+.title-xl,
+.title-lg,
+.title-md,
+.title-sm,
+.title-xs {
+	font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  /*letter-spacing: 0.2em;*/
+	font-weight: 700;
+}
+.title-xl { font-size: 10em; line-height: 1.1; }
+.title-lg { font-size: 2em;  line-height: 1.1; }
+.title-md { font-size: 1.4em; }
+.title-sm { font-size: 1em; }
+.title-xs { font-size: 0.9em; }
+.content {
+	.title-xl,
+	.title-lg,
+	.title-md,
+	.title-sm,
+	.title-xs {
+		margin: 1em 0 0 0;
+	}
+
+}
+
+/*
+	Small screens
+*/
+@media all and (max-width: 767px) {
+	/*body { font-size: 12px; }*/
+	.title-xl { font-size: 3em; }
+	.title-lg { font-size: 1.8em; }
+	.title-md { font-size: 1.5em; }
+	.title-sm { font-size: 1.2em; }
+	.title-xs { font-size: 0.9em; }
+}
+
+
+/*
+	Utility
+*/
+.uc {
+	text-transform: uppercase;
+}
+.lc {
+	text-transform: none;
+}

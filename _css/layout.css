@@ -1,0 +1,107 @@
+/*
+// Standard bootstrap breakpoints
+@media all and (min-width: 480px) {}
+@media all and (min-width: 768px) {}
+@media all and (min-width: 992px) {}
+@media all and (min-width: 1200px) {}
+*/
+
+
+/*
+  Container
+*/
+.container {
+  margin: auto;
+}
+
+
+@media all and (max-width: 767px) {
+  .container { padding: 0 1em; }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+/*
+  Sections
+*/
+section {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+
+/*
+  Flex layouts
+*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (min-width: 768px) {
+  .flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-horizontal--top {
+    align-items: flex-start;
+  }
+  .flex-horizontal--item {
+    flex: 0 0 auto;
+  }
+  .flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .third, .half {
+    box-sizing: border-box;
+    padding: 0 1em;
+  }
+  .half {
+    width: 50%;
+  }
+  .third {
+    width: 33%;
+  }
+}
+
+
+/*
+  Utility
+*/
+@media all and (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+@media all and (min-width: 767px) {
+  .visible-xs {
+    display: none;
+  }
+}
+.img-responsive {
+  max-width: 100%;
+}
