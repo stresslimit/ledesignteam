@@ -2,13 +2,11 @@
   "name": "ledesignteam",
   "version": "1.0.0",
   "description": "ledesignteam ============",
-  "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack-dev-server --hot",
     "build": "webpack --progress",
-    "deploy": "npm run dist && npm run sync",
-    "dist": "npm run build && rsync index.html dist/ && rsync assets dist/ --exclude=out.js -av",
-    "sync": "aws s3 sync dist s3://ledesignteam.com --acl public-read --delete"
+    "deploy": "npm run dist && firebase deploy",
+    "dist": "npm run build && rsync index.html dist/ && rsync assets dist/ --exclude=out.js -av"
   },
   "repository": {
     "type": "git",
@@ -16,10 +14,6 @@
   },
   "author": "@stresslimit",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stresslimit/ledesignteam/issues"
-  },
-  "homepage": "https://github.com/stresslimit/ledesignteam#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "css-loader": "^0.23.1",
