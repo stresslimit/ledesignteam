@@ -5,6 +5,7 @@
   max-width: 4em;
 }
 .header-site-description {
+  margin-left: 1em;
 }
 .header-social {
   flex-grow: 1;
@@ -12,13 +13,13 @@
 }
 
 .splotch--yellow {
-  background: url('/assets/spotch-yellow.png') 0 0 no-repeat;
+  background: url('/assets/images/spotch-yellow.png') 0 0 no-repeat;
 }
 .splotch--purple {
-  background: url('/assets/spotch-purple.png') 0 0 no-repeat;
+  background: url('/assets/images/spotch-purple.png') 0 0 no-repeat;
 }
 .splotch--rust {
-  background: url('/assets/spotch-rust.png') 0 0 no-repeat;
+  background: url('/assets/images/spotch-rust.png') 0 0 no-repeat;
 }
 .splotch--contact {
   background-size: auto;

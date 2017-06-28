@@ -1,9 +1,16 @@
----
-layout: default
-title: 'Le Design Team'
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Le Design Team</title>
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+</head>
+<body>
 
-<section>
+
+  <section>
   <header class="flex-horizontal">
     <h1 class="header-logo splotch splotch--yellow title-lg">Le Design Team</h1>
     <div class="header-site-description">
@@ -28,7 +35,65 @@ title: 'Le Design Team'
   </div>
 </section>
 
-{% include typewriter.js %}
+<script>
+  /*
+  while sayings
+    foreach word
+      print letter
+      wait 100
+    wait 3000
+  */
+
+  window.onload = init
+
+  var sayings = [
+    'Big Vision',
+    'Responsible Design',
+    'New Method',
+    'Be Ethical',
+    'New Design',
+    'Fearless',
+    'Sustainable',
+    'Upcycle',
+    'Reuse',
+    'No Limits',
+    'The Future is here',
+    'You still reading?',
+    'Contact us'
+  ]
+
+  var element = document.getElementById('js-typewriter')
+
+  function init(j) {
+    if ( typeof j === 'object' )
+      j = 0 // first time only
+    var word_counter = j < sayings.length ? j : 0
+    var text = sayings[word_counter]
+    var letter_counter = 0
+    type(text, letter_counter, word_counter)
+  }
+
+  function type(text, letter_counter, word_counter) {
+    // attention global
+    if ( !is_visible(element) ) // if element is offscreen, wait 2s and try again
+      return setTimeout(type, 1000, text, letter_counter, word_counter)
+    var new_text = text.substr(0, letter_counter)
+    var last_counter = text.length > letter_counter
+    // attention global
+    element.innerHTML = `${new_text}${ last_counter ? '|' : '' }`
+    if ( last_counter )
+      setTimeout(type, 100, text, letter_counter+1, word_counter)
+    else
+      setTimeout(init, 2000, word_counter+1)
+  }
+
+  function is_visible(elm) {
+    var rect = elm.getBoundingClientRect()
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight)
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0)
+  }
+</script>
+
 
 
 <section>
@@ -113,3 +178,19 @@ title: 'Le Design Team'
 
   </div>
 </section>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42713315-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
+
