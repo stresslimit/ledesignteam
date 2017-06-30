@@ -26,6 +26,10 @@ a {
 		text-decoration: underline;
 	}*/
 }
+a.img-link {
+	padding: 0;
+	background: none;
+}
 b, strong {
   font-weight: 700;
 }
