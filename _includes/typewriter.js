@@ -18,16 +18,18 @@
   window.onload = init
 
   var sayings = [
-    'Have Vision',
-    'Design Responsibly',
-    'New Method',
-    'Be Ethical',
-    'New Design',
+    'Responsible Design',
+    'Ethical Solutions',
+    'Human Centered Design',
+    'Hardware / Software',
+    'Good Marketing',
+    'Data and Code',
+    'Environmental Focus',
+    'Renewable Energy',
     'Fearless',
     'Sustainable',
     'Upcycle',
     'Reuse',
-    'No Limits',
     'The Future is here',
     'You still reading?',
     'Contact us'
