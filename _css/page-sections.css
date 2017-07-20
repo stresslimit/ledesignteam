@@ -1,8 +1,17 @@
 
 .header-logo {
-  /*word-spacing: 40em; */
   line-height: 1.1;
   max-width: 4em;
+}
+
+.bg--yellow {
+  background: var(--yellow);
+}
+.bg--purple {
+  background: var(--purple);
+}
+.bg--rust {
+  background: var(--rust);
 }
 
 .splotch--yellow {
@@ -21,16 +30,20 @@
   display: inline-block;
   padding: 1.2em;
   background-size: contain;
+  margin: 0;
+}
+.splotch a {
+  background: none;
+  padding: 0;
 }
 
-.content-right {
-  float: right;
+.splotch-title {
+  line-height: inherit;
+  background-size: auto;
+  padding: 2em; padding-bottom: 0;
+  margin:0;
 }
 
-.footer {
-  background: var(--yellow);
-
-  a {
-    background: none;
-  }
+.footer a {
+  background: none;
 }

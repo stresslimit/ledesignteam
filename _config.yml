@@ -1,4 +1,7 @@
 # Build settings
+include: [
+  _pages
+]
 exclude: [
   README.md,
   firebase.json,
@@ -11,6 +14,7 @@ exclude: [
   webpack.config.babel.js,
   yarn.lock
 ]
-permalink: /:title/
+permalink: /:title
 collections:
-- case_studies
+  case_studies:
+    output: true
