@@ -4,6 +4,14 @@
   max-width: 4em;
 }
 
+.link-block {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.link-block .title-md {
+  margin-bottom: 0;
+}
+
 .bg--yellow {
   background: var(--yellow);
 }

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'Case Studies'
-permalink: /case-studies
+permalink: /case-studies/
 ---
 
 {% for cs in site.case_studies %}
@@ -10,17 +10,16 @@ permalink: /case-studies
 <div class="container">
 
   <div class="row valign-top">
-    <div class="shrink">
-      <p><img src="/assets/images/case-studies/logo-{{ cs.slug }}.png" style="width:160px;"></p>
-    </div>
-    <div class="grow">
+    <div class="half vspace-bottom">
       <h3 class="title-md">{{ cs.client }}</h3>
       <h2 class="title-lg">{{ cs.title }}</h2>
       <h4 class="title-sm"><span class="chevron">»</span> {{ cs.category }}</h4>
     </div>
+    <div class="half">
+      <p><img src="/assets/images/case-studies/logo-{{ cs.slug }}.png" style="width:160px;"></p>
+    </div>
   </div>
 
-  <br>
 
   <div class="row valign-top">
     <div class="half">
