@@ -1,4 +1,7 @@
 # Build settings
+include: [
+  _pages
+]
 exclude: [
   README.md,
   firebase.json,
@@ -13,4 +16,5 @@ exclude: [
 ]
 permalink: /:title/
 collections:
-- case_studies
+  case_studies:
+    output: true

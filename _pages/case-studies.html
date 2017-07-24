@@ -1,0 +1,37 @@
+---
+layout: default
+title: 'Case Studies'
+permalink: /case-studies/
+---
+
+{% for cs in site.case_studies %}
+
+<section>
+<div class="container">
+
+  <div class="row valign-top">
+    <div class="half vspace-bottom">
+      <h3 class="title-md">{{ cs.client }}</h3>
+      <h2 class="title-lg">{{ cs.title }}</h2>
+      <h4 class="title-sm"><span class="chevron">»</span> {{ cs.category }}</h4>
+    </div>
+    <div class="half">
+      <p><img src="/assets/images/case-studies/logo-{{ cs.slug }}.png" style="width:160px;"></p>
+    </div>
+  </div>
+
+
+  <div class="row valign-top">
+    <div class="half">
+      {{ cs.content }}
+    </div>
+    <div class="half">
+      <p><img src="/assets/images/case-studies/banner-{{ cs.slug }}.jpg"></p>
+    </div>
+  </div>
+
+
+</div>
+</section>
+
+{% endfor %}
