@@ -13,9 +13,9 @@ let config = {
     'css/style': [
       path.resolve(__dirname, '_css/index.css')
     ],
-    // 'assets/js/app': [
-    //   path.resolve(__dirname, '_js/app.js')
-    // ]
+    'js/app': [
+      path.resolve(__dirname, '_js/index.js')
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'assets' ),
