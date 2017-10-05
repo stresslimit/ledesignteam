@@ -26,7 +26,7 @@
   background: var(--rust);
 }
 
-.splotch--yellow {
+/*.splotch--yellow {
   background: url('/assets/images/spotch-yellow.png') 0 0 no-repeat;
 }
 .splotch--purple {
@@ -34,11 +34,11 @@
 }
   .splotch--purple.splotch-title--bottom {
     background: url('/assets/images/spotch-purple--bottom.png') 50% 100% no-repeat;
-  }
+  }*/
 /*.splotch--pink {
   background: url('/assets/images/spotch-pink.png') 0 0 no-repeat;
 }*/
-  .splotch--pink.splotch-title--bottom, .link-block:hover .splotch-title--bottom {
+  /*.splotch--pink.splotch-title--bottom, .link-block:hover .splotch-title--bottom {
     background: url('/assets/images/spotch-pink--bottom.png') 50% 100% no-repeat;
   }
 .splotch--rust {
@@ -69,7 +69,7 @@
 }
 .splotch-title--bottom {
   padding-top: 0;
-}
+}*/
 
 .footer a {
   background: none;
